@@ -1,59 +1,62 @@
-# Mastery Progress Tracker
+# Progress Tracker
 
-**Rule:** a checkbox means you have evidence of independent understanding. It does not mean you watched a video or read a page. For each chapter, use the complete checklist and scoring rubric in [MASTERY_PROTOCOL.md](MASTERY_PROTOCOL.md).
+Use this file as an evidence log, not a time tracker. A stage is complete only after you pass its mastery gate in [MASTERY_PROTOCOL.md](MASTERY_PROTOCOL.md).
 
 ## Stage 0 — Readiness
-- [ ] Algebra and equation manipulation do not block reading
-- [ ] Functions, graphs, composition, and inverses
-- [ ] Powers, exponentials, logarithms, and basic trigonometry
-- [ ] Summation notation and basic set notation
-- [ ] I can track vector and matrix dimensions
-- [ ] Completed 15 self-generated diagnostic problems
+- [ ] Algebra, functions, logarithms and equation manipulation
+- [ ] Summation notation and indices
+- [ ] Basic derivatives and chain rule
+- [ ] Conditional probability, expectation and variance
+- Evidence / weak spots:
 
-## Book chapters — complete in order
-- [ ] Chapter 2 — Linear Algebra
-- [ ] Chapter 3 — Analytic Geometry
-- [ ] Chapter 4 — Matrix Decompositions
-- [ ] Chapter 5 — Vector Calculus
-- [ ] Chapter 6 — Probability and Distributions
-- [ ] Chapter 7 — Continuous Optimization
-- [ ] Chapter 8 — When Models Meet Data
-- [ ] Chapter 9 — Linear Regression
-- [ ] Chapter 10 — Principal Component Analysis
-- [ ] Chapter 11 — Gaussian Mixture Models
-- [ ] Chapter 12 — Support Vector Machines
+## Core textbook
+- [ ] Chapter 1 — Introduction and ML viewpoint
+- [ ] Chapter 2 — Linear algebra
+- [ ] Chapter 3 — Analytic geometry
+- [ ] Chapter 4 — Matrix decompositions
+- [ ] Chapter 5 — Vector calculus
+- [ ] Chapter 6 — Probability and distributions
+- [ ] Chapter 7 — Continuous optimization
+- [ ] Chapter 8 — When models meet data
+- [ ] Chapter 9 — Linear regression
+- [ ] Chapter 10 — Dimensionality reduction with PCA
+- [ ] Chapter 11 — Density estimation with Gaussian mixture models
+- [ ] Chapter 12 — Classification with support vector machines
 
-Do not mark a chapter complete until its derivation, problem-solving, implementation, independent validation, and fresh-problem gates pass.
+## Implementation evidence
+- [ ] Reimplemented vector and matrix operations and checked them against NumPy
+- [ ] Visualized projections, distances and hyperplanes
+- [ ] Reconstructed a matrix from its SVD and measured approximation error
+- [ ] Verified analytical gradients with finite differences
+- [ ] Compared empirical moments with theoretical moments
+- [ ] Implemented gradient descent and tested learning-rate sensitivity
+- [ ] Fit linear regression and compared closed-form and iterative solutions
+- [ ] Implemented PCA and plotted explained variance and reconstruction error
+- [ ] Implemented a small Gaussian-mixture EM loop and tracked log-likelihood
+- [ ] Visualized an SVM decision boundary and margin
 
-## Evidence portfolio
-- [ ] Derivation log exists and is updated
-- [ ] Error log records root causes and re-tests
-- [ ] Linear transformation lab passes tests
-- [ ] Projection lab passes tests
-- [ ] Eigen/SVD lab passes reconstruction checks
-- [ ] Gradient lab passes finite-difference checks
-- [ ] Probability simulation compares empirical and theoretical moments
-- [ ] Gradient descent experiments explain convergence behavior
-- [ ] Linear regression implementation is independently validated
-- [ ] PCA implementation is independently validated
-- [ ] EM implementation records likelihood and initialization behavior
-- [ ] SVM experiment explains margin and regularization
-- [ ] Capstone report includes assumptions, derivations, tests, and failure cases
+## Integration project
+- [ ] Written a mathematical problem statement and assumptions
+- [ ] Created a reproducible data and evaluation pipeline
+- [ ] Included at least one derivation and one numerical verification
+- [ ] Compared appropriate baselines
+- [ ] Explained limitations and failure cases
+- [ ] Published a concise report and reproducible notebook
 
-## Weekly reflection
+## Review log
 
-Copy for each review:
+For each review, record:
+- Date:
+- Topic:
+- What I can derive without notes:
+- What I can implement:
+- Mistake or misconception found:
+- Next review action:
 
-```text
-Date:
-Chapter / concept:
-What I can derive without notes:
-Problems solved independently:
-Implementation and tests:
-Mistake with the biggest root cause:
-What I re-tested from an earlier week:
-What remains unclear:
-Next specific action:
-```
+## Final self-assessment
 
-Progress means retained, independent performance. Do not optimize for speed or checkbox count.
+- [ ] I can explain the core ideas without reading notes.
+- [ ] I can derive the main equations and state their assumptions.
+- [ ] I can implement the central methods from scratch.
+- [ ] I can verify results numerically and diagnose failures.
+- [ ] I can connect each mathematical concept to an ML use case.
