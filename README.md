@@ -1,72 +1,72 @@
 <div align="center">
 
-# Mathematics for Machine Learning
+# Mathematics for Machine Learning — Mastery Track
 
-**A structured, practical roadmap from mathematical foundations to ML-ready intuition.**
+**One textbook. One rigorous path. Derive it. Code it. Test it. Explain it.**
 
-Free resources · Topic checklists · Weekly roadmap · Python exercises
-
-[Roadmap](docs/ROADMAP.md) · [Resources](docs/RESOURCES.md) · [Progress Tracker](docs/PROGRESS.md) · [Exercises](exercises/README.md)
+[Start Here](docs/MASTER_CURRICULUM.md) · [Mastery Protocol](docs/MASTERY_PROTOCOL.md) · [Implementation Labs](docs/IMPLEMENTATION_LABS.md) · [Progress Tracker](docs/PROGRESS.md)
 
 </div>
 
-## Why this repository exists
-Machine learning becomes easier to understand when you know the mathematics behind the algorithms. This repository organizes essential topics, free learning resources, and practical exercises into one sequence. The goal is to understand what the math means, derive important equations, and connect concepts to real ML systems.
+## The mission
 
-## Learning path
-| Stage | Subject | Main outcome |
+This is a long-form training system for building the mathematical foundations required to understand, implement, debug, and eventually research machine-learning methods. This is **not** a list of courses to collect or a 12-week speedrun. The objective is durable competence: explain assumptions, derive equations, implement the method, test its limits, and connect the mathematics to model behavior.
+
+## The one-resource rule
+
+Your primary spine is the free textbook **[Mathematics for Machine Learning (MML)](https://mml-book.github.io/)** by Marc Peter Deisenroth, A. Aldo Faisal, and Cheng Soon Ong.
+
+Read the book in order, including its ML application chapters. Use the [master curriculum](docs/MASTER_CURRICULUM.md) to turn each chapter into a cycle of reading, derivation, exercises, implementation, and a mastery gate.
+
+- Do not switch textbooks whenever a topic feels difficult.
+- Do not mistake watching an explanation for learning the mathematics.
+- Use this repository's notes, exercises, and code to make the book active.
+- If a prerequisite gap blocks progress, repair that specific gap, then return to the book.
+- Advanced specialist resources belong after the core spine, not beside it as competing primary courses.
+
+## The learning loop
+
+**LEARN → RECONSTRUCT → DERIVE → SOLVE → IMPLEMENT → TEST → EXPLAIN**
+
+A chapter is complete only when you can do the work without copying a solution. See the [mastery protocol](docs/MASTERY_PROTOCOL.md) for pass criteria and review rules.
+
+## Curriculum map
+
+| Stage | MML chapters | Capability you must earn |
 |---|---|---|
-| 0 | Prerequisites | Algebra, functions, logarithms, summation notation |
-| 1 | Linear algebra | Vectors, matrices, projections, eigenvectors, SVD |
-| 2 | Calculus | Derivatives, chain rule, partial derivatives, gradients |
-| 3 | Probability & statistics | Uncertainty, distributions, estimation, inference |
-| 4 | Optimization | Loss functions, gradient descent, model training |
-| 5 | Discrete mathematics | Logic, counting, proofs, graph reasoning |
-| 6 | Information theory | Entropy, cross-entropy, KL divergence, information gain |
-| 7 | Integration | Implement ideas in Python and connect them to ML |
+| 0. Readiness | Targeted prerequisite repair | Algebra, functions, logarithms, summation, and notation no longer block the main text |
+| 1. Linear algebra | 2 | Reason about vectors, matrices, linear systems, rank, and linear transformations |
+| 2. Analytic geometry | 3 | Interpret norms, distances, angles, projections, and similarity |
+| 3. Matrix decompositions | 4 | Understand eigenvalues, eigendecomposition, and SVD |
+| 4. Vector calculus | 5 | Derive partial derivatives, gradients, Jacobians, and chain-rule computations |
+| 5. Probability | 6 | Reason about distributions, expectation, covariance, and conditional probability |
+| 6. Optimization | 7 | Analyze objectives, gradients, curvature, and numerical optimization |
+| 7. Models meet data | 8 | Connect data, assumptions, models, and inference |
+| 8. Linear regression | 9 | Derive and implement regression and diagnose errors |
+| 9. Dimensionality reduction | 10 | Derive PCA and explain its geometry and limitations |
+| 10. Latent-variable models | 11 | Understand Gaussian mixture models and EM |
+| 11. Margin-based learning | 12 | Explain and implement support vector machines |
+| 12. Integration | All relevant chapters | Build a mathematical ML portfolio and defend your decisions |
 
-Suggested schedule: 12 weeks at around 1–2 hours per day. Treat this as a first pass, not a deadline for mastery.
+## What makes this advanced
 
-## How to use this repository
-1. Follow [the roadmap](docs/ROADMAP.md).
-2. Choose resources from [the resource library](docs/RESOURCES.md).
-3. Track your learning in [the progress checklist](docs/PROGRESS.md).
-4. Solve problems on paper before checking with code.
-5. Implement important ideas with Python and NumPy.
-6. Explain each concept in your own words.
+Every important topic is studied through four lenses:
 
-### Daily study template
-- **40 min — Learn:** lecture or textbook.
-- **40 min — Practice:** solve exercises independently.
-- **30 min — Implement:** reproduce a concept using Python/NumPy.
-- **10 min — Review:** record mistakes and takeaways.
+1. **Mathematical:** definitions, assumptions, derivations, dimensions, proofs or proof sketches.
+2. **Computational:** a from-scratch implementation, numerical checks, and comparison against a reference implementation.
+3. **Experimental:** controlled tests, visualizations, edge cases, and explanations of observed behavior.
+4. **Machine learning:** the model or training behavior the mathematics explains, including limitations.
 
-## Repository structure
-```text
-math-for-machine-learning/
-├── README.md
-├── CONTRIBUTING.md
-├── LICENSE
-├── docs/ (roadmap, resources, progress tracker, study method)
-└── exercises/ (six subject-wise exercise sets)
-```
+The curriculum is mastery-based, not calendar-based. Expect a substantial long-term commitment; do not rush just to mark boxes complete.
 
-## Core resources
-- [Mathematics for Machine Learning — free textbook](https://mml-book.github.io/)
-- [3Blue1Brown — Linear Algebra](https://www.3blue1brown.com/topics/linear-algebra)
-- [MIT 18.06 — Linear Algebra](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/)
-- [3Blue1Brown — Calculus](https://www.3blue1brown.com/topics/calculus)
-- [MIT 18.02SC — Multivariable Calculus](https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/)
-- [Harvard Statistics 110](https://stat110.hsites.harvard.edu/)
-- [MIT 18.05 — Probability and Statistics](https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/)
-- [MIT 6.042J — Mathematics for Computer Science](https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/)
-- [Dive into Deep Learning](https://d2l.ai/)
+## Start today
 
-## Guiding principles
-- Understand concepts before memorizing formulas.
-- Derive key equations at least once.
-- Practice by hand, then verify with code.
-- Use libraries to check results, not hide the underlying mathematics.
-- Do not postpone all ML practice until every subject is finished.
+1. Open the [master curriculum](docs/MASTER_CURRICULUM.md).
+2. Begin with Chapter 2 of the textbook if prerequisites are comfortable; otherwise repair only the specific gaps listed in Stage 0.
+3. Solve exercises on paper before coding.
+4. Keep a derivation log, an error log, and a small Python/NumPy lab for each chapter.
+5. Use the mastery gate before moving on.
 
-Educational resource collection. External links and course availability may change.
+**Definition of success:** you can derive, implement, test, and clearly explain the core mathematics behind the methods in this book—and you know what you still do not understand.
+
+Educational project. The textbook remains authoritative for its content; this repository provides a study system and implementation workflow.
