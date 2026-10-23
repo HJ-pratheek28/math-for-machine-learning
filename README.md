@@ -1,72 +1,58 @@
 <div align="center">
 
-# Mathematics for Machine Learning — Mastery Track
+# Mathematics for Machine Learning
 
-**One textbook. One rigorous path. Derive it. Code it. Test it. Explain it.**
+**A complete, mastery-based path from mathematical foundations to classical ML algorithms.**
 
-[Start Here](docs/MASTER_CURRICULUM.md) · [Mastery Protocol](docs/MASTERY_PROTOCOL.md) · [Implementation Labs](docs/IMPLEMENTATION_LABS.md) · [Progress Tracker](docs/PROGRESS.md)
+One primary textbook · Chapter-by-chapter roadmap · Derivations · NumPy labs · Mastery gates
+
+[Start the Roadmap](docs/ROADMAP.md) · [Resource Library](docs/RESOURCES.md) · [Mastery Protocol](docs/MASTERY_PROTOCOL.md) · [Implementation Labs](docs/IMPLEMENTATION_LABS.md) · [Progress Tracker](docs/PROGRESS.md)
 
 </div>
 
-## The mission
+## What this repository is
 
-This is a long-form training system for building the mathematical foundations required to understand, implement, debug, and eventually research machine-learning methods. This is **not** a list of courses to collect or a 12-week speedrun. The objective is durable competence: explain assumptions, derive equations, implement the method, test its limits, and connect the mathematics to model behavior.
+A structured learning system for building the mathematics needed to understand, implement, and reason about machine learning—not a collection of disconnected links.
 
-## The one-resource rule
+The core follows **[Mathematics for Machine Learning](https://mml-book.github.io/)** by Deisenroth, Faisal, and Ong from prerequisites through linear algebra, geometry, matrix decompositions, vector calculus, probability, optimization, regression, PCA, Gaussian mixture models and SVMs.
 
-Your primary spine is the free textbook **[Mathematics for Machine Learning (MML)](https://mml-book.github.io/)** by Marc Peter Deisenroth, A. Aldo Faisal, and Cheng Soon Ong.
+## Start here
 
-Read the book in order, including its ML application chapters. Use the [master curriculum](docs/MASTER_CURRICULUM.md) to turn each chapter into a cycle of reading, derivation, exercises, implementation, and a mastery gate.
-
-- Do not switch textbooks whenever a topic feels difficult.
-- Do not mistake watching an explanation for learning the mathematics.
-- Use this repository's notes, exercises, and code to make the book active.
-- If a prerequisite gap blocks progress, repair that specific gap, then return to the book.
-- Advanced specialist resources belong after the core spine, not beside it as competing primary courses.
+1. Read [the complete roadmap](docs/ROADMAP.md) once to understand the journey.
+2. Open [the resource library](docs/RESOURCES.md). Use the primary book as your spine; use other resources only to repair a specific gap or extend a completed topic.
+3. Follow the [mastery protocol](docs/MASTERY_PROTOCOL.md) for every chapter.
+4. Complete the [implementation labs](docs/IMPLEMENTATION_LABS.md) after deriving the mathematics.
+5. Track evidence in [the progress tracker](docs/PROGRESS.md).
 
 ## The learning loop
 
-**LEARN → RECONSTRUCT → DERIVE → SOLVE → IMPLEMENT → TEST → EXPLAIN**
+**Read → derive → solve → implement → explain → test yourself.**
 
-A chapter is complete only when you can do the work without copying a solution. See the [mastery protocol](docs/MASTERY_PROTOCOL.md) for pass criteria and review rules.
+A checkbox means you can demonstrate understanding without copying notes. Watching a video or running library code is not sufficient evidence.
 
-## Curriculum map
+## Repository map
 
-| Stage | MML chapters | Capability you must earn |
-|---|---|---|
-| 0. Readiness | Targeted prerequisite repair | Algebra, functions, logarithms, summation, and notation no longer block the main text |
-| 1. Linear algebra | 2 | Reason about vectors, matrices, linear systems, rank, and linear transformations |
-| 2. Analytic geometry | 3 | Interpret norms, distances, angles, projections, and similarity |
-| 3. Matrix decompositions | 4 | Understand eigenvalues, eigendecomposition, and SVD |
-| 4. Vector calculus | 5 | Derive partial derivatives, gradients, Jacobians, and chain-rule computations |
-| 5. Probability | 6 | Reason about distributions, expectation, covariance, and conditional probability |
-| 6. Optimization | 7 | Analyze objectives, gradients, curvature, and numerical optimization |
-| 7. Models meet data | 8 | Connect data, assumptions, models, and inference |
-| 8. Linear regression | 9 | Derive and implement regression and diagnose errors |
-| 9. Dimensionality reduction | 10 | Derive PCA and explain its geometry and limitations |
-| 10. Latent-variable models | 11 | Understand Gaussian mixture models and EM |
-| 11. Margin-based learning | 12 | Explain and implement support vector machines |
-| 12. Integration | All relevant chapters | Build a mathematical ML portfolio and defend your decisions |
+| File | Purpose |
+|---|---|
+| [ROADMAP.md](docs/ROADMAP.md) | Full chapter-by-chapter sequence, goals, derivations, labs and mastery gates |
+| [RESOURCES.md](docs/RESOURCES.md) | Primary book, prerequisite repair links, topic map, tools and advanced references |
+| [MASTER_CURRICULUM.md](docs/MASTER_CURRICULUM.md) | Chapter-level curriculum checklist |
+| [MASTERY_PROTOCOL.md](docs/MASTERY_PROTOCOL.md) | How to study, test and score understanding |
+| [IMPLEMENTATION_LABS.md](docs/IMPLEMENTATION_LABS.md) | Hands-on mathematical experiments |
+| [PROGRESS.md](docs/PROGRESS.md) | Evidence-based progress tracking |
 
-## What makes this advanced
+## Principles
 
-Every important topic is studied through four lenses:
+- **Depth over speed:** there is no arbitrary deadline.
+- **One primary resource:** no resource hopping.
+- **Math before APIs:** derive the core before relying on a library.
+- **Reproducibility:** document assumptions, seeds, metrics and limitations.
+- **Evidence over checkboxes:** pass a mastery gate before advancing.
 
-1. **Mathematical:** definitions, assumptions, derivations, dimensions, proofs or proof sketches.
-2. **Computational:** a from-scratch implementation, numerical checks, and comparison against a reference implementation.
-3. **Experimental:** controlled tests, visualizations, edge cases, and explanations of observed behavior.
-4. **Machine learning:** the model or training behavior the mathematics explains, including limitations.
+## Who this is for
 
-The curriculum is mastery-based, not calendar-based. Expect a substantial long-term commitment; do not rush just to mark boxes complete.
+Learners who know basic programming and want a rigorous foundation for classical ML, deep learning, research papers and more advanced AI/ML study. If algebra, derivatives or probability are rusty, start at Stage 0 of the roadmap.
 
-## Start today
+## License and attribution
 
-1. Open the [master curriculum](docs/MASTER_CURRICULUM.md).
-2. Begin with Chapter 2 of the textbook if prerequisites are comfortable; otherwise repair only the specific gaps listed in Stage 0.
-3. Solve exercises on paper before coding.
-4. Keep a derivation log, an error log, and a small Python/NumPy lab for each chapter.
-5. Use the mastery gate before moving on.
-
-**Definition of success:** you can derive, implement, test, and clearly explain the core mathematics behind the methods in this book—and you know what you still do not understand.
-
-Educational project. The textbook remains authoritative for its content; this repository provides a study system and implementation workflow.
+The repository's notes, roadmaps and original lab instructions are maintained here. The primary textbook remains the work of its authors; use the official site for the book and its license/terms.
