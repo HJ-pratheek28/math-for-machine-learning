@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "title": "Math for Machine Learning — Research Lab",
+  "learning_horizon_months": 12,
+  "domains": [
+    {
+      "id": "foundations",
+      "title": "Mathematical and programming foundations",
+      "path": "curriculum/foundations",
+      "topics": [
+        "algebra-review",
+        "single-variable-calculus-review",
+        "proof-language",
+        "python-numpy-readiness"
+      ]
+    },
+    {
+      "id": "linear-algebra",
+      "title": "Linear algebra and geometry",
+      "path": "curriculum/linear-algebra",
+      "topics": [
+        "vectors-and-linear-maps",
+        "subspaces-rank-null-space",
+        "orthogonality-projections",
+        "least-squares",
+        "eigenvalues-and-eigenvectors",
+        "svd-and-low-rank-approximation",
+        "conditioning-and-pca"
+      ]
+    },
+    {
+      "id": "calculus",
+      "title": "Calculus and matrix calculus",
+      "path": "curriculum/calculus",
+      "topics": [
+        "derivatives-and-taylor-expansion",
+        "gradients-and-directional-derivatives",
+        "jacobians-and-hessians",
+        "chain-rule",
+        "matrix-calculus",
+        "finite-differences-and-autodiff"
+      ]
+    },
+    {
+      "id": "probability-statistics",
+      "title": "Probability and statistics",
+      "path": "curriculum/probability-statistics",
+      "topics": [
+        "conditional-probability",
+        "random-variables-and-distributions",
+        "expectation-and-covariance",
+        "multivariate-gaussian",
+        "limit-theorems",
+        "mle-map-bayes",
+        "bias-variance-and-inference"
+      ]
+    },
+    {
+      "id": "optimization",
+      "title": "Optimization",
+      "path": "curriculum/optimization",
+      "topics": [
+        "convexity",
+        "gradient-descent",
+        "stochastic-gradient-descent",
+        "momentum-and-adaptive-methods",
+        "newton-methods",
+        "constraints-kkt-duality",
+        "regularization-and-convergence"
+      ]
+    },
+    {
+      "id": "information-theory",
+      "title": "Information theory",
+      "path": "curriculum/information-theory",
+      "topics": [
+        "self-information-and-entropy",
+        "cross-entropy",
+        "kl-divergence",
+        "mutual-information",
+        "information-theory-in-ml"
+      ]
+    },
+    {
+      "id": "numerical-mathematics",
+      "title": "Numerical mathematics",
+      "path": "curriculum/numerical-mathematics",
+      "topics": [
+        "floating-point",
+        "rounding-and-cancellation",
+        "conditioning-versus-stability",
+        "stable-linear-algebra",
+        "finite-difference-error",
+        "reproducible-computation"
+      ]
+    },
+    {
+      "id": "advanced",
+      "title": "Advanced mathematical tools for ML",
+      "path": "curriculum/advanced",
+      "topics": [
+        "stochastic-processes",
+        "measure-theoretic-probability",
+        "concentration-and-high-dimensional-statistics",
+        "kernel-methods-and-gaussian-processes",
+        "geometry-of-data",
+        "causal-inference-foundations",
+        "deep-learning-gradient-flow"
+      ]
+    }
+  ],
+  "mastery_states": [
+    "unstarted",
+    "learning",
+    "practiced",
+    "mastered"
+  ],
+  "assessment_weights": {
+    "conceptual_understanding": 20,
+    "derivation_or_proof": 25,
+    "problem_solving": 20,
+    "implementation_and_numerical_validation": 25,
+    "explanation_and_ml_connection": 10
+  }
+}
