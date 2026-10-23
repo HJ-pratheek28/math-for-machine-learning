@@ -1,58 +1,56 @@
+# Math for Machine Learning — Research Lab
+
 <div align="center">
 
-# Mathematics for Machine Learning
+**Understand the mathematics. Implement the algorithms. Investigate the evidence.**
 
-**A complete, mastery-based path from mathematical foundations to classical ML algorithms.**
+A rigorous, open-source learning system for the mathematics behind machine learning.
 
-One primary textbook · Chapter-by-chapter roadmap · Derivations · NumPy labs · Mastery gates
-
-[Start the Roadmap](docs/ROADMAP.md) · [Resource Library](docs/RESOURCES.md) · [Mastery Protocol](docs/MASTERY_PROTOCOL.md) · [Implementation Labs](docs/IMPLEMENTATION_LABS.md) · [Progress Tracker](docs/PROGRESS.md)
+[Curriculum](docs/curriculum/roadmap.md) · [Resource map](docs/curriculum/resource-map.md) · [Blueprint](docs/blueprint.md) · [First lesson](curriculum/linear-algebra/least-squares.md)
 
 </div>
 
-## What this repository is
+## The learning loop
 
-A structured learning system for building the mathematics needed to understand, implement, and reason about machine learning—not a collection of disconnected links.
+**Intuition → derive → implement → visualize → verify → assess → connect to ML.**
 
-The core follows **[Mathematics for Machine Learning](https://mml-book.github.io/)** by Deisenroth, Faisal, and Ong from prerequisites through linear algebra, geometry, matrix decompositions, vector calculus, probability, optimization, regression, PCA, Gaussian mixture models and SVMs.
+This repository is being developed as a research-lab platform: a structured curriculum, tested Python implementations, executable notebooks, interactive visualizations, problem sets, and reproducible projects. Planned features are tracked honestly in the [blueprint](docs/blueprint.md).
+
+## Seven mathematical domains
+
+| Domain | Central question |
+|---|---|
+| Linear algebra and geometry | What do projections, eigenvectors, SVD, and low-rank approximations reveal about data? |
+| Calculus and matrix calculus | How do derivatives and Jacobians describe changes in model outputs and losses? |
+| Probability and statistics | How do we represent uncertainty and estimate parameters? |
+| Optimization | Why do training algorithms converge, stall, or diverge? |
+| Information theory | How do entropy, cross-entropy, and KL divergence relate to learning objectives? |
+| Numerical mathematics | Why can mathematically valid computations fail on real hardware? |
+| Advanced topics | How do stochastic processes, kernels, geometry, and high-dimensional statistics extend the toolkit? |
 
 ## Start here
 
-1. Read [the complete roadmap](docs/ROADMAP.md) once to understand the journey.
-2. Open [the resource library](docs/RESOURCES.md). Use the primary book as your spine; use other resources only to repair a specific gap or extend a completed topic.
-3. Follow the [mastery protocol](docs/MASTERY_PROTOCOL.md) for every chapter.
-4. Complete the [implementation labs](docs/IMPLEMENTATION_LABS.md) after deriving the mathematics.
-5. Track evidence in [the progress tracker](docs/PROGRESS.md).
+1. Read the [curriculum roadmap](docs/curriculum/roadmap.md).
+2. Follow the [resource map](docs/curriculum/resource-map.md) instead of resource-hopping.
+3. Study the [lesson template](docs/curriculum/lesson-template.md) and the [least-squares lesson](curriculum/linear-algebra/least-squares.md).
+4. Install the package and run its tests.
+5. Record evidence of mastery, not just completed pages.
 
-## The learning loop
+## Development
 
-**Read → derive → solve → implement → explain → test yourself.**
+Python 3.10+ is targeted.
 
-A checkbox means you can demonstrate understanding without copying notes. Watching a video or running library code is not sufficient evidence.
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -e ".[dev]"
+pytest
+```
 
-## Repository map
+## Current status
 
-| File | Purpose |
-|---|---|
-| [ROADMAP.md](docs/ROADMAP.md) | Full chapter-by-chapter sequence, goals, derivations, labs and mastery gates |
-| [RESOURCES.md](docs/RESOURCES.md) | Primary book, prerequisite repair links, topic map, tools and advanced references |
-| [MASTER_CURRICULUM.md](docs/MASTER_CURRICULUM.md) | Chapter-level curriculum checklist |
-| [MASTERY_PROTOCOL.md](docs/MASTERY_PROTOCOL.md) | How to study, test and score understanding |
-| [IMPLEMENTATION_LABS.md](docs/IMPLEMENTATION_LABS.md) | Hands-on mathematical experiments |
-| [PROGRESS.md](docs/PROGRESS.md) | Evidence-based progress tracking |
+This is an incremental build. R0 introduces the product blueprint, curriculum, a first exemplar lesson, a tested mathematical function, CI, and an initial website shell. Not every domain, visualization, assessment, or research project is implemented yet.
 
-## Principles
+## Attribution
 
-- **Depth over speed:** there is no arbitrary deadline.
-- **One primary resource:** no resource hopping.
-- **Math before APIs:** derive the core before relying on a library.
-- **Reproducibility:** document assumptions, seeds, metrics and limitations.
-- **Evidence over checkboxes:** pass a mastery gate before advancing.
-
-## Who this is for
-
-Learners who know basic programming and want a rigorous foundation for classical ML, deep learning, research papers and more advanced AI/ML study. If algebra, derivatives or probability are rusty, start at Stage 0 of the roadmap.
-
-## License and attribution
-
-The repository's notes, roadmaps and original lab instructions are maintained here. The primary textbook remains the work of its authors; use the official site for the book and its license/terms.
+External textbooks, courses, and papers remain the property of their authors. This project publishes original explanations, code, experiments, and attributed references—not copied textbook chapters or unlicensed solutions.
